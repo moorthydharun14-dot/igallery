@@ -1,0 +1,30 @@
+<!-- Photo Gallery Template -->
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stars Properties Photo Gallery</title>
+    <link rel="stylesheet" href="{% static 'gallery/style.css' %}">
+    
+</head>
+<body img="{% static 'gallery/images/collapse.jpg' %}">
+    <h1>Stars Properties Photo Gallery</h1>
+
+    <div class="gallery">
+        <img src="{% static 'gallery/images/star factory(milkyway).jpg' %}" alt="Photo 1">
+        <img src="{% static 'gallery/images/stellar kinamatics.jpg' %}" alt="Photo 2">
+        <img src="{% static 'gallery/images/stellar magnetic field.jpg' %}" alt="Photo 3">
+        <img src="{% static 'gallery/images/stellar mass.jpg' %}" alt="Photo 4">
+        <img src="{% static 'gallery/images/stellar radiation.jpg' %}" alt="Photo 5">
+        <img src="{% static 'gallery/images/collapse.jpg' %}" alt="Photo 6">
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="{% static 'gallery/script.js' %}"></script>
+</body>
+</html>
